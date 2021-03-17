@@ -1,0 +1,140 @@
+.wrapper {
+    padding: 41px 0 48px;
+    color: #ffffff;
+    background: #0254c0;
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+
+        .col {
+            display: flex;
+            flex-direction: column;
+
+            .logo {
+                width: 92px;
+                height: 30px;
+                margin-bottom: 18px;
+                background-repeat: no-repeat;
+            }
+
+            .title {
+                font-size: 14px;
+                margin-top: 7px;
+                line-height: 15px;
+                font-weight: bold;
+                margin-bottom: 24px;
+            }
+
+            .connect {
+                margin: 7px;
+                font-size: 14px;
+                line-height: 15px;
+                font-weight: bold;
+                margin-bottom: 14px;
+            }
+
+            .row {
+                font-size: 13px;
+                color: #ffffff;
+                font-weight: 500;
+                line-height: 14px;
+                position: relative;
+                text-decoration: none;
+
+                &:not(:last-child) {
+                    margin-bottom: 16px;
+                }
+
+                &.in_coming {
+                    pointer-events: none;
+
+                    &::after {
+                        content: 's\1EAFp ra m\1EAFt';
+
+                        margin-left: 4px;
+                        padding: 5px 6px 1px;
+                        display: inline-block;
+                        text-transform: uppercase;
+
+                        font-size: 10px;
+                        font-weight: 700;
+                        border-radius: 5px;
+                        background-color: #3dc7ff;
+                    }
+                }
+            }
+
+            .social_network {
+                .icon_item {
+                    width: 36px;
+                    height: 36px;
+                    margin-right: 16px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+
+                    img {
+                        width: 36px;
+                        height: 36px;
+                    }
+                }
+            }
+
+            .download_title {
+                font-size: 14px;
+                margin-top: 40px;
+                font-weight: bold;
+                line-height: 15px;
+            }
+
+            .download_app {
+                margin-top: 16px;
+
+                .icon_download {
+                    cursor: pointer;
+                    margin-right: 8px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+
+                    img {
+                        height: 32px;
+                        width: 108px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.mobile,
+    &.tablet {
+        padding: 32px 0;
+
+        .main {
+            flex-wrap: wrap;
+
+            .logo {
+                width: 100%;
+                flex: 1 1 100%;
+                margin-bottom: 24px;
+                object-fit: contain;
+                object-position: left;
+                background-repeat: no-repeat;
+            }
+
+            .col {
+                flex: 1 1 calc(50%);
+                margin-bottom: 40px;
+
+                &:last-child {
+                    flex: 1 1 100%;
+                    margin-bottom: 0;
+                }
+
+                .title {
+                    margin: 0;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.wrapper {
+    color: #ffffff;
+    padding: 32px 0 37px;
+    background: #024eb1;
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+
+        .col {
+            .title {
+                font-size: 13px;
+
+                &.mt_12 {
+                    margin-top: 12px;
+                }
+
+                &.mt_11 {
+                    margin-top: 6px;
+                }
+
+                .bold {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+
+                .mail {
+                    color: #ffffff;
+                    font-weight: 500;
+                    line-height: 14px;
+
+                    text-decoration: none;
+                }
+
+                .hotline {
+                    margin-top: 9px;
+
+                    .tel {
+                        font-size: 20px;
+                        font-weight: bold;
+
+                        .phone_number {
+                            color: #ffffff;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .certificated_text {
+                    width: 257px;
+                    line-height: 20px;
+                    display: inline-block;
+                }
+            }
+
+            .address_wrapper {
+                font-size: 13px;
+                color: #ffffff;
+                line-height: 20px;
+
+                &.w_285 {
+                    width: 285px;
+                    margin-top: 15.68px;
+                }
+
+                &.w_218 {
+                    width: 218px;
+                    margin-top: 16.68px;
+                }
+
+                &.w_216 {
+                    width: 216px;
+                    margin-top: 12px;
+                }
+
+                .name {
+                    font-weight: bold;
+                }
+            }
+
+            .certificated_icon {
+                height: 48px;
+                width: 128.76px;
+                display: inline-block;
+
+                margin-top: 16px;
+                background-repeat: no-repeat;
+                background-image: url('/assets/footer/certificated.png');
+            }
+        }
+    }
+
+    &.mobile, &.tablet {
+        padding: 32px 0 16px;
+
+        .main {
+            flex-wrap: wrap;
+
+            .col {
+                flex: 1 1 100%;
+
+                .address_wrapper {
+                    margin-top: 16px;
+
+                    &.w_216 {
+                        width: unset;
+                    }
+                }
+
+                .title {
+                    .certificated_text {
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
