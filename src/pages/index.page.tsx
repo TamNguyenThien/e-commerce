@@ -8,6 +8,7 @@ export interface HomeProps {}
 
 const Home: FunctionComponent<InferGetServerSidePropsType<typeof getServerSideProps> & HomeProps> = (props) => {
     const HomeBanner = dynamic(() => import('@Pages/home/Components/Banner'), { ssr: false, loading: () => <div style={{ height: '400px' }} /> });
+    // const Sliders = dynamic(() => import('@Pages/home/Components/Sliders'), { ssr: false, loading: () => <div style={{ height: '400px' }} /> });
     return (
         <div>
             <Head>
@@ -16,6 +17,7 @@ const Home: FunctionComponent<InferGetServerSidePropsType<typeof getServerSidePr
             </Head>
 
             <HomeBanner />
+            {/* <Sliders /> */}
         </div>
     );
 };
