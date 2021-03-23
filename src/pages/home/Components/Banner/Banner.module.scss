@@ -1,6 +1,6 @@
 .wrapper {
     width: 100%;
-    height: 400px;
+    height: 800px;
 
     background-size: cover;
     background-position: center;
@@ -12,6 +12,54 @@
     justify-content: center;
 
     .img {
-        height: 100%;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 800px;
+        z-index: -1;
+        object-fit: cover;
+        position: absolute;
+        object-position: center;
+    }
+    .body {
+        margin-top: 290px;
+        .titles {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            .title {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 25px;
+            }
+
+            .sub_title {
+                font-size: 50px;
+                margin-top: 16px;
+                max-width: 616px;
+                font-weight: bold;
+                line-height: 50px;
+                white-space: pre-line;
+            }
+        }
+        .blocks {
+            display: flex;
+            width: 100%;
+            margin: 0 -26px;
+            margin-top: 75px;
+            .block {
+                margin: 0 26px;
+                padding: 25px 49px;
+                background-color: aliceblue;
+                opacity: 0.8;
+                width: 390px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 }

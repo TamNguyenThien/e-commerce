@@ -53,11 +53,6 @@ function MyApp({ Component, pageProps, deviceType, disableFooter, disableHeader,
                 {/* ANIMATE CSS */}
                 <link as={'style'} rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-                {/* JSON LD */}
-                {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(seo.jsonLD.website) }} /> */}
-
-                {/* ANALYTICS */}
             </Head>
 
             <ViewDetected deviceType={deviceType}>

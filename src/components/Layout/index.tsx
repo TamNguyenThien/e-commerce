@@ -15,7 +15,7 @@ const Layout: FunctionComponent<LayoutProps> = (props) => {
     const className = classnames([styles.layout]);
     return (
         <div className={className}>
-            <Header />
+            {/* <Header /> */}
             {props.children}
             <Footer />
         </div>
