@@ -1,7 +1,10 @@
 .wrapper {
-    color: #ffffff;
+    color: #000000;
     padding: 32px 0 37px;
-    background: #024eb1;
+    background: #FFFFFF;
+
+    border-top: 1px solid #FBA442;
+    border-bottom: 1px solid #FBA442;
 
     .main {
         display: flex;
@@ -9,15 +12,9 @@
 
         .col {
             .title {
-                font-size: 13px;
-
-                &.mt_12 {
-                    margin-top: 12px;
-                }
-
-                &.mt_11 {
-                    margin-top: 6px;
-                }
+                font-size: 25px;
+                font-weight: 400;
+                line-height: 41px;
 
                 .bold {
                     font-size: 14px;
@@ -25,7 +22,7 @@
                 }
 
                 .mail {
-                    color: #ffffff;
+                    color: #000000;
                     font-weight: 500;
                     line-height: 14px;
 
@@ -40,7 +37,7 @@
                         font-weight: bold;
 
                         .phone_number {
-                            color: #ffffff;
+                            color: #000000;
                             text-decoration: none;
                         }
                     }
@@ -55,7 +52,7 @@
 
             .address_wrapper {
                 font-size: 13px;
-                color: #ffffff;
+                color: #000000;
                 line-height: 20px;
 
                 &.w_285 {

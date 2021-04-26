@@ -12,58 +12,33 @@ const BottomFooter: FunctionComponent = () => {
         <div className={classnames([styles.wrapper])}>
             <LayoutContainer className={styles.main}>
                 <div className={styles.col}>
-                    <div className={classnames([styles.title, styles.mt_12])}>
-                        <span className={styles.bold}>LIÊN HỆ</span>
-                    </div>
+                    <div className={classnames([styles.title])}>INTERIOR DESIGN</div>
+
                     <div className={classnames([styles.address_wrapper, styles.w_285])}>
-                        <div className={styles.name}>Trụ sở Hồ Chí Minh</div>
-                        Tầng 8, Toà nhà PVFCCO, số 27 Đinh Bộ Lĩnh, Phường 24, Q.Bình Thạnh.
+                        <div className={styles.name}>About Us</div>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                     </div>
                 </div>
                 <div className={styles.col}>
-                    <div className={classnames([styles.title, styles.mt_12])}>
-                        <a className={styles.mail} href="mailto:hotro@edoctor.vn">
-                            Email: hotro@edoctor.vn
-                        </a>
-                    </div>
-                    <div className={classnames([styles.address_wrapper, styles.w_218])}>
-                        <div className={styles.name}>Chi nhánh TP. Hà Nội</div>
-                        Lầu 2, Toà A3 Ecolife, số 58 Tố Hữu, Nam Từ Liêm.
-                    </div>
+                    <div className={classnames([styles.title])}>Projects</div>
+                    <div className={classnames([styles.address_wrapper])}>WHMCS-bridge</div>
+                    <div className={classnames([styles.address_wrapper])}>Search Domain</div>
+                    <div className={classnames([styles.address_wrapper])}>My Account</div>
+                    <div className={classnames([styles.address_wrapper])}>Shopping Cart</div>
+                    <div className={classnames([styles.address_wrapper])}>Our Shop</div>
                 </div>
                 <div className={styles.col}>
-                    <div className={classnames([styles.title, styles.mt_11])}>
-                        <span className={styles.hotline}>
-                            Hotline:{' '}
-                            <span className={styles.tel}>
-                                <a className={styles.phone_number} href="tel:19006115">
-                                    1900 6115
-                                </a>{' '}
-                                -{' '}
-                                <a className={styles.phone_number} href="tel:0899909115">
-                                    0899909115
-                                </a>
-                            </span>
-                        </span>
-                    </div>
-                    <div className={classnames([styles.address_wrapper])}>
-                        <div className={styles.name}>Trụ sở Hồ Chí Minh</div>
-                        Tầng 8, Toà nhà PVFCCO, số 27 Đinh Bộ Lĩnh, Phường 24, Q.Bình Thạnh.
-                    </div>
-                    <div className={classnames([styles.address_wrapper])}>
-                        <div className={styles.name}>Chi nhánh TP. Hà Nội</div>
-                        Lầu 2, Toà A3 Ecolife, số 58 Tố Hữu, Nam Từ Liêm.
-                    </div>
-                    <div className={classnames([styles.address_wrapper, styles.w_216])}>
-                        <div className={styles.name}>Chi nhánh TP. Cần Thơ</div>
-                        368B Nguyễn Văn Cừ nối dài, P. An Khánh, Q. Ninh Kiều.
-                    </div>
+                    <div className={classnames([styles.title])}>Contact us</div>
+                    <div className={classnames([styles.address_wrapper])}>Address : C-308 New Delhi</div>
+                    <div className={classnames([styles.address_wrapper])}>Phone : +91 9348394893</div>
+                    <div className={classnames([styles.address_wrapper])}>Email : info@colorlib.com</div>
                 </div>
+
                 <div className={styles.col}>
-                    <div className={styles.title}>
-                        <span className={styles.certificated_text}>GPDKKD số 0106462477 do Sở KH và ĐT TP.HCM cấp ngày 21/02/2014</span>
-                    </div>
-                    <span className={styles.certificated_icon} />
+                    <div className={styles.title}>Newsletter</div>
+                    <div className={classnames([styles.address_wrapper, styles.w_216])}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+                    <input />
+                    <button>Subscript</button>
                 </div>
             </LayoutContainer>
         </div>

@@ -12,8 +12,8 @@ const Footer: FunctionComponent = () => {
     return (
         <footer className={styles.wrapper}>
             <div>
-                <TopFooter />
-                <MiddleFooter />
+                {/* <TopFooter /> */}
+                {/* <MiddleFooter /> */}
                 <BottomFooter />
             </div>
         </footer>

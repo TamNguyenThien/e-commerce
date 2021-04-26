@@ -4,6 +4,7 @@ import styles from '../../styles/Home.module.css';
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import dynamic from 'next/dynamic';
 import { DataManager } from '@Components/Utils/DataTransfer';
+import BlockItem from './home/Components/BlockItem';
 
 export interface HomeProps {}
 
@@ -20,7 +21,9 @@ const Home: FunctionComponent<InferGetServerSidePropsType<typeof getServerSidePr
             </Head>
             <Navbar />
             <HomeBanner />
-            <Sliders />
+            {/* <Sliders /> */}
+
+            <BlockItem />
         </DataManager>
     );
 };
@@ -29,6 +32,10 @@ export default Home;
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
     const props = { a: '1', b: '2' };
+    const posts = await fetch('https://jsonplaceholder.typicode.com/posts')
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+    console.log(posts, 'post');
     return {
         props,
     };
