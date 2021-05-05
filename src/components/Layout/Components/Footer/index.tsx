@@ -2,21 +2,18 @@ import { FunctionComponent } from 'react';
 
 // Components
 import TopFooter from './Components/TopFooter';
-import MiddleFooter from './Components/MiddleFooter';
 import BottomFooter from './Components/BottomFooter';
 
 // Styles
 import styles from './Footer.module.scss';
+import Page from '@Components/UI/Page';
 
 const Footer: FunctionComponent = () => {
     return (
-        <footer className={styles.wrapper}>
-            <div>
-                {/* <TopFooter /> */}
-                {/* <MiddleFooter /> */}
-                <BottomFooter />
-            </div>
-        </footer>
+        <Page className={styles.wrapper}>
+            <BottomFooter />
+            <TopFooter />
+        </Page>
     );
 };
 

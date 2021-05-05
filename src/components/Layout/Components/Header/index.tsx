@@ -1,38 +1,16 @@
 import React, { FunctionComponent } from 'react';
-import dynamic from 'next/dynamic';
 
-// Components
-import Link from 'next/link';
+// Component
+import TopHeader from './Component/TopHeader';
+import BottomHeader from '../Header/Component/BottomHeader';
 
-// Icons
-
-// Utilities
-import classnames from 'classnames';
-
-// Styles
-import styles from './HeaderNavbar.module.scss';
-
-const Header: FunctionComponent = () => {
-    const className = classnames([
-        styles.wrapper,
-        {
-            navbar: 'desktop',
-        },
-    ]);
-    const NavBar = dynamic(() => import('@Components/Layout/Components/Header/Components/DesktopNavbar'));
-
+interface NavbarProps {}
+const Navbar: FunctionComponent<NavbarProps> = () => {
     return (
-        <div className={className}>
-            <div className={styles.menu}>
-                <Link href="/">
-                    <a href="#" className={styles.brand}>
-                        <img src="/assets/logo.svg" width={'113px'} height={'36px'} />
-                    </a>
-                </Link>
-                <NavBar />
-            </div>
+        <div>
+            <TopHeader />
+            <BottomHeader />
         </div>
     );
 };
-
-export default Header;
+export default Navbar;

@@ -1,0 +1,21 @@
+.wrapper {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+
+  .container {
+
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    justify-content: flex-end;
+
+    .input {
+      width: 200px;
+      padding: 8px;
+      border: none;
+      margin: 0 16px;
+      border-radius: 4px;
+      background-color: #ccc;
+    }
+  }
+}

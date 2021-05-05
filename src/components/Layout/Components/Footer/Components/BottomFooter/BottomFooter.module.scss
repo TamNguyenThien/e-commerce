@@ -1,10 +1,9 @@
 .wrapper {
-    color: #000000;
+    color: #ffffff;
     padding: 32px 0 37px;
-    background: #FFFFFF;
+    background: #810606;
 
-    border-top: 1px solid #FBA442;
-    border-bottom: 1px solid #FBA442;
+    border-bottom: 1px solid #FFFFFF;
 
     .main {
         display: flex;
@@ -22,7 +21,7 @@
                 }
 
                 .mail {
-                    color: #000000;
+                    color: #ffffff;
                     font-weight: 500;
                     line-height: 14px;
 
@@ -37,7 +36,7 @@
                         font-weight: bold;
 
                         .phone_number {
-                            color: #000000;
+                            color: #ffffff;
                             text-decoration: none;
                         }
                     }
@@ -52,7 +51,7 @@
 
             .address_wrapper {
                 font-size: 13px;
-                color: #000000;
+                color: #ffffff;
                 line-height: 20px;
 
                 &.w_285 {
@@ -84,6 +83,21 @@
                 background-repeat: no-repeat;
                 background-image: url('/assets/footer/certificated.png');
             }
+        }
+    }
+    .nav_bar {
+        display: flex;
+        padding: 0 -12px;
+        .nav_item {
+            margin: 12px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #ccc;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 

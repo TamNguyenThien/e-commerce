@@ -1,4 +1,5 @@
 .wrapper {
+    background-color: #810606;
     .main {
         padding: 49px 0 32px;
         border-top: 0.8px solid #dfe1e6;
@@ -8,33 +9,18 @@
         justify-content: space-between;
 
         .title {
-            width: 266px;
-            font-size: 18px;
-            color: #000000;
+            font-size: 16px;
+            color: #ffffff;
             line-height: 19px;
-            font-weight: bold;
+            font-weight: normal;
         }
 
-        .icon_google {
-            width: 148px;
-            height: 36px;
-            background-repeat: no-repeat;
-            background-image: url('/assets/footer/google.png');
-        }
+        .list_payment {
+            display: flex;
 
-        .icon_facebook {
-            width: 140px;
-            height: 43px;
-            background-repeat: no-repeat;
-            background-image: url('/assets/footer/facebook.png');
-        }
+            .payment_item {
 
-        .hint {
-            width: 368px;
-            font-size: 14px;
-            font-weight: 500;
-            color: #414141;
-            line-height: 20px;
+            }
         }
     }
 

@@ -1,0 +1,30 @@
+.body {
+  margin-bottom: 48px ;
+  .wrapper {
+  .top_cate {
+    display: flex;
+    justify-content: space-between;
+
+    .left_banner {
+      width: 55%;
+      height: 417px;
+      margin-right: 24px;
+    }
+    .right_banner {
+      display: flex;
+      flex-wrap: wrap;
+      .cate_item{
+        margin-right: 24px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+  .bottom_cate {
+    display: flex;
+    justify-content: center;
+    .item {
+      width: 30%;
+    }
+  }
+}
+}

@@ -1,0 +1,10 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 48px;
+
+    .menu_item {
+        cursor: pointer;
+    }
+}

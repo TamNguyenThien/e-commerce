@@ -1,0 +1,124 @@
+.body {
+    width: 260px;
+    height: 410px;
+    text-align: center;
+
+    position: relative;
+
+    border: 1px solid #fff;
+
+    &:hover {
+        border: 1px solid #ccc;
+
+        .banner {
+            [class*='slick-next'] {
+                display: block;
+            }
+
+            [class*='slick-prev'] {
+                display: block;
+            }
+        }
+    }
+    .slider {
+        width: 260px;
+        height: 260px;
+    }
+    .banner {
+        width: 260px;
+        height: 260px;
+        object-fit: cover;
+        object-position: center;
+
+        [class*='slick-next'] {
+            right: 0px;
+            color: #000;
+            display: none;
+            position: absolute;
+            &::before {
+                opacity: 1;
+                color: #000;
+            }
+        }
+
+        [class*='slick-prev'] {
+            top: 50%;
+            left: 0px;
+            z-index: 100;
+            display: none;
+            color: #000;
+            position: absolute;
+            &::before {
+                opacity: 1;
+                color: #000;
+            }
+        }
+        .item {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .content {
+        .title {
+            padding: 8px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+
+            text-align: center;
+
+            margin: 8px 0;
+
+            text-decoration: none;
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+        .rate {
+        }
+        .price {
+            margin-top: 8px;
+        }
+    }
+
+    &.mode_list {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        text-align: start;
+
+        margin-bottom: 12px;
+        .banner {
+            width: 290px;
+            height: 290px;
+        }
+
+        &:hover {
+            border: 1px solid #fff;
+
+            .banner {
+                [class*='slick-next'] {
+                    display: unset;
+                }
+
+                [class*='slick-prev'] {
+                    display: unset;
+                }
+            }
+        }
+        .content {
+            text-align: start;
+            margin-left: 24px;
+
+            .title {
+                margin: 0;
+                padding: 0;
+                font-size: 20px;
+                line-height: 30px;
+                text-align: start;
+            }
+        }
+    }
+}

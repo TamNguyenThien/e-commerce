@@ -1,0 +1,22 @@
+.slick_arrow {
+    &.next {
+        img {
+            transform-origin: center;
+            transform: rotate(180deg);
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover:not(.dissabled):not(:disabled) {
+        cursor: pointer;
+    }
+}
+
+.anchor {
+    &.disabled {
+        pointer-events: none;
+    }
+}

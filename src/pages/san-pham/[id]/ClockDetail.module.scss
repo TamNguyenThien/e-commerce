@@ -1,0 +1,126 @@
+.wrapper {
+  display: flex;
+  margin-bottom: 40px;
+  flex-direction: column;
+
+  .wrapper_title {
+    margin: 28px 0;
+    text-align: center;
+  }
+  .summary {
+    width: 100%;
+    display: flex;
+    margin-bottom: 32px;
+
+    .left_summary {
+      width: 40%;
+      margin-right: 24px;
+
+      .slider {
+        width: 100%;
+        .image {
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+    .middle_summary {
+      width: 30%;
+      font-size: 14px;
+      line-height: 20px;
+      margin-right: 24px;
+
+      .title {
+        margin-bottom: 32px;
+      }
+      .description {
+        margin: 12px 0;
+
+        .price {
+          margin: 8px 0;
+          font-size: 20px;
+          color: #827c7c;
+          text-align: center;
+        }
+      }
+      .showroom {
+        padding: 8px;
+        margin-top: 12px;
+        margin-bottom: 24px;
+
+        cursor: pointer;
+        text-align: center;
+        border-radius: 8px;
+        background-color: #6c6d70;
+        a {
+          color: #fff;
+        }
+      }
+      .add_cart {
+        padding: 16px;
+        margin: 12px 0;
+        cursor: pointer;
+        text-align: center;
+        background-color: #990000;
+
+        a {
+          color: #fff;
+        }
+      }
+      .note {
+        text-align: center;
+        strong {
+          color: rgb(236, 65, 65);
+        }
+      }
+    }
+    .right_summary {
+      flex: 1;
+
+      .hight_light {
+        .item {
+          display: flex;
+          align-items: center;
+
+          .image {
+            width: 60px;
+            height: 60px;
+
+            object-fit: contain;
+
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper_tabs {
+    margin-bottom: 40px;
+    .tabs {
+      .tab_item {
+        padding: 8px;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: 400;
+        margin-left: 24px;
+        border: 1px solid #e9e9e9;
+        color: rgb(108, 105, 105);
+        &.active {
+          color: #000;
+        }
+        &:hover {
+          color: #990000;
+        }
+      }
+    }
+    .tab_content {
+      border-top: none;
+      border: 1px solid #e9e9e9;
+      .item {
+        padding: 24px;
+      }
+    }
+  }
+
+}

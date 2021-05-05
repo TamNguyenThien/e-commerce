@@ -2,9 +2,9 @@ import React, { FunctionComponent } from 'react';
 import classnames from 'classnames';
 
 // Styles
-import styles from './Layout.module.scss';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import styles from './Layout.module.scss';
 import { useViewDetected } from '@Components/Utils/ViewDetected';
 
 interface LayoutProps {}
@@ -15,7 +15,7 @@ const Layout: FunctionComponent<LayoutProps> = (props) => {
     const className = classnames([styles.layout]);
     return (
         <div className={className}>
-            {/* <Header /> */}
+            <Header />
             {props.children}
             <Footer />
         </div>
