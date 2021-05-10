@@ -92,7 +92,7 @@ const ClockDetail: FunctionComponent<ClockDetailProps> = () => {
                             toggle('1');
                         }}
                     >
-                        Tab1
+                        MÔ TẢ
                     </NavItem>
                     <NavItem
                         className={classnames([styles.tab_item, { [styles.active]: activeTab === '2' }])}
@@ -100,7 +100,7 @@ const ClockDetail: FunctionComponent<ClockDetailProps> = () => {
                             toggle('2');
                         }}
                     >
-                        More Tabs
+                        CHẾ ĐỘ BẢO HÀNH & HẬU MÃI
                     </NavItem>
                 </Nav>
                 <TabContent className={styles.tab_content} activeTab={activeTab}>
@@ -140,7 +140,7 @@ const ClockDetail: FunctionComponent<ClockDetailProps> = () => {
                 </TabContent>
             </div>
 
-            <ListClock title="SẢN PHẨM LIÊN QUAN" />
+            <ListClock title="SẢN PHẨM LIÊN QUAN" isSlides={true} />
         </LayoutContainer>
     );
 };

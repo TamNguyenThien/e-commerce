@@ -38,4 +38,33 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    .sliders {
+        display: flex;
+        width: 100%;
+
+        [class*='slick-next'] {
+            top: 50%;
+            right: 0px;
+            color: #000;
+            display: none;
+            position: absolute;
+            &::before {
+                opacity: 1;
+                color: #000;
+            }
+        }
+
+        [class*='slick-prev'] {
+            top: 50%;
+            left: 0px;
+            z-index: 100;
+            display: none;
+            color: #000;
+            position: absolute;
+            &::before {
+                opacity: 1;
+                color: #000;
+            }
+        }
+    }
 }
