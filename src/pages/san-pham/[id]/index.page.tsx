@@ -2,7 +2,6 @@ import { FunctionComponent, useState } from 'react';
 import Rater from 'react-rater';
 import classnames from 'classnames';
 import { TabContent, TabPane, Nav, NavItem } from 'reactstrap';
-
 // components
 import Image from '@Components/UI/Image';
 import ListClock from '@Pages/home/Components/ListClock';
@@ -10,6 +9,8 @@ import LayoutContainer from '@Components/Layout/Components/Container';
 
 // styles
 import styles from './ClockDetail.module.scss';
+import Rating from './Components/Ratings';
+import Question from './Components/Question';
 
 
 interface ClockDetailProps {}
@@ -50,6 +51,7 @@ const ClockDetail: FunctionComponent<ClockDetailProps> = () => {
                     <div className={styles.add_cart}>
                         <a>THÊM VÀO GIỎ</a>
                     </div>
+
                     <div className={styles.note}>
                         Có thanh toán: <strong>Trả Góp</strong> khi mua Online (Qua thẻ tín dụng) <br /> Gọi đặt mua: <strong>1900.6777</strong> (7:30-21:30)
                     </div>
@@ -141,6 +143,10 @@ const ClockDetail: FunctionComponent<ClockDetailProps> = () => {
             </div>
 
             <ListClock title="SẢN PHẨM LIÊN QUAN" isSlides={true} />
+
+            {/* <Rating /> */}
+
+            <Question />
         </LayoutContainer>
     );
 };

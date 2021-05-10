@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  margin-bottom: 24px;
+  .banner {
+    width: 33%;
+    margin-right: 24px;
+    .image {
+      width: 100%;
+    }
+  }
+  .info {
+    width: 67%;
+    font-size: 16px;
+    .item {
+      margin: 8px 0;
+    }
+  }
+}
