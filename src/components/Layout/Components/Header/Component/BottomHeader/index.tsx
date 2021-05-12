@@ -28,9 +28,6 @@ const BottomHeader: FunctionComponent<NavbarProps> = () => {
                     <a href="/danh-muc/dong-ho-cap-doi" className={styles.nav_item}>
                         CẶP ĐÔI
                     </a>
-                    <a href="/danh-muc/phu-kien" className={styles.nav_item}>
-                        PHỤ KIỆN
-                    </a>
                     <a href="/dich-vu" className={styles.nav_item}>
                         DỊCH VỤ
                     </a>

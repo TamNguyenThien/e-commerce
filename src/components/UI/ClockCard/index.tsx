@@ -50,7 +50,7 @@ const ClockCard: FunctionComponent<ClockCardProps> = ({ src, title, rate, price,
         <div className={classNameWrapper}>
             <Slider ref={slider} {...settings} className={styles.banner}>
                 {src.map((item) => (
-                    <Image className={styles.banner} src={item} />
+                    <Image key={item} className={styles.banner} src={item} />
                 ))}
             </Slider>
             <div className={styles.content}>

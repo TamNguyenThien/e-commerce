@@ -22,6 +22,7 @@
             "@Styles/*": ["styles/*"],
             "@Pages/*": ["src/pages/*"],
             "@Utils/*": ["src/utils/*"],
+            "@Libs/*": ["src/libs/*"],
             "@Config/*": ["src/config/*"],
             "@Components/*": ["src/components/*"]
         }

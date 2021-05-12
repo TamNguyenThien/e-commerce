@@ -3,6 +3,10 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 
+// Apis
+import postsApi from '@Libs/api/posts';
+import { getServerSideHttp } from '@Libs/http/cms';
+
 // Components
 import Menu from './home/Components/Menu';
 import Category from './home/Components/Caterogy';
@@ -32,12 +36,12 @@ const Home: FunctionComponent<InferGetServerSidePropsType<typeof getServerSidePr
 export default Home;
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-    const props = { a: '1', b: '2' };
-    const posts = await fetch('https://jsonplaceholder.typicode.com/posts')
-        .then((response) => response.json())
-        .then((json) => console.log(json));
-    console.log(posts, 'post');
+    const http = getServerSideHttp(ctx);
+    const postsData = await postsApi(http).find()
+    console.log('**** cc ', postsData);
     return {
-        props,
+        props: {
+            postsData,
+        },
     };
 };

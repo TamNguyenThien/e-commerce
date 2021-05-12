@@ -2,11 +2,15 @@
   .filter {
     margin: 48px -12px;
     .item {
-      color: #ffffff;
       margin: 0 12px;
+      cursor: pointer;
+      color: #ffffff;
       padding: 16px 24px;
       border-radius: 16px;
       background-color: #cec2ab;
+
+      text-decoration: none;
+
     }
   }
   .title {

@@ -4,8 +4,12 @@ import classnames from 'classnames'
 import Image from '@Components/UI/Image';
 interface ShopCardProps {
   className?: string
+  address?: string,
+  phone?: string,
+  mail?: string,
+  brand?: string
 }
-const ShopCard: FunctionComponent<ShopCardProps> = ({ className }) => {
+const ShopCard: FunctionComponent<ShopCardProps> = ({ className, address, brand, phone, mail }) => {
    return (
        <div className={classnames([styles.wrapper, className])}>
            <div className={styles.banner}>
@@ -13,19 +17,26 @@ const ShopCard: FunctionComponent<ShopCardProps> = ({ className }) => {
            </div>
            <div className={styles.info}>
                <div className={styles.item}>
-                   <strong>Chi Nhánh:</strong>160 Âu Cơ, P.9, Q.Tân Bình – TPHCM <a className={styles.map}>(Xem Bản Đồ)</a>
+                   <strong>Chi Nhánh:</strong>{address}<a className={styles.map}>(Xem Bản Đồ)</a>
                </div>
                <div className={styles.item}>
-                   <strong>ĐT:</strong> 1900.6777
+                   <strong>ĐT:</strong> {phone}
                </div>
                <div className={styles.item}>
-                   <strong>Mail:</strong> lienhe@donghocuatoi.com
+                   <strong>Mail:</strong> {mail}
                </div>
                <div className={styles.item}>
-                   <strong>Bán Các Hãng:</strong> Citizen, Casio, TiTan, Skagen, Seiko, OP, Orient, Adriatica, Police, Timex, Daniel Wellington
+                   <strong>Bán Các Hãng:</strong> {brand}
                </div>
            </div>
        </div>
    );
 }
+
+ShopCard.defaultProps = {
+    address: '160 Âu Cơ, P.9, Q.Tân Bình – TPHCM',
+    phone: '0825199646',
+    mail: 'Nguyentam2112015@gmail.com ',
+    brand: 'Citizen, Casio, TiTan, Skagen, Seiko, OP, Orient, Adriatica, Police, Timex, Daniel Wellington',
+};
 export default ShopCard
