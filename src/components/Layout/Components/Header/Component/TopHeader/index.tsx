@@ -14,8 +14,10 @@ const TopHeader: FunctionComponent = () => {
     return (
         <div className={styles.wrapper}>
             <LayoutContainer className={styles.container}>
-                <FontAwesomeIcon icon={faShoppingCart} />
-                <Input className={styles.input} placeholder='Tìm sản phẩm' />
+                <a href="/gio-hang">
+                    <FontAwesomeIcon icon={faShoppingCart} />
+                </a>
+                <Input className={styles.input} placeholder="Tìm sản phẩm" />
                 <FontAwesomeIcon icon={faSearch} />
             </LayoutContainer>
         </div>
